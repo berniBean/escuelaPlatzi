@@ -10,10 +10,10 @@ namespace CoreEscuela.Entidades
         public string Nombre { get; set; }
         public object Evaluacion { get; internal set; }
 
-        public Alumno(){
-            UniqueId = Guid.NewGuid().ToString();
+        public List<Evaluacion> Evaluaciones {get; set;}  = new List<Evaluacion>();
+        public Alumno() => UniqueId = Guid.NewGuid().ToString();
             
-        } 
+        
     }
 
 }
