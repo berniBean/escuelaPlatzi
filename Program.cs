@@ -31,6 +31,14 @@ namespace CoreEscuela
             WriteLine($"Alumno:{ob.Nombre}");
             WriteLine($"Alumno:{ob.UniqueId}");
 
+            var evaluacion = new Evaluacion(){Nombre="Evaluacion de math", Nota=4.5f};
+
+            ob = evaluacion;
+            Printer.WriteTitle("Objeto escuela");
+            WriteLine($"Alumno: {ob.Nombre}");
+            WriteLine($"Alumno: {ob.UniqueId}");
+            WriteLine($"Alumno: {ob.GetType()}");
+
         }
 
         private static void ImpimirCursosEscuela(Escuela escuela)
