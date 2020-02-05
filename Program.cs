@@ -15,6 +15,22 @@ namespace CoreEscuela
             Printer.WriteTitle("Bienvenidos a la escuela");
             ImpimirCursosEscuela(engine.Escuela);
 
+            Printer.DrawLine(20);
+            Printer.DrawLine(20);
+            Printer.DrawLine(20);
+            Printer.WriteTitle("Pruebas de polimorfismo");
+
+            var alumnoTest = new Alumno{Nombre = "Gato Gary"};
+
+            ObjetoEscuelaBase ob = alumnoTest;
+            
+            Printer.WriteTitle("Alumno");
+            WriteLine($"Alumno:{alumnoTest.Nombre}");
+            WriteLine($"Alumno:{alumnoTest.UniqueId}");
+            Printer.WriteTitle("ObjetoEscuela");
+            WriteLine($"Alumno:{ob.Nombre}");
+            WriteLine($"Alumno:{ob.UniqueId}");
+
         }
 
         private static void ImpimirCursosEscuela(Escuela escuela)
