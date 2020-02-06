@@ -34,7 +34,7 @@ namespace CoreEscuela
             var evaluacion = new Evaluacion(){Nombre="Evaluacion de math", Nota=4.5f};
 
             ob = evaluacion;
-            Printer.WriteTitle("Objeto escuela");
+            Printer.WriteTitle("Evaluacion");
             WriteLine($"Alumno: {ob.Nombre}");
             WriteLine($"Alumno: {ob.UniqueId}");
             WriteLine($"Alumno: {ob.GetType()}");
