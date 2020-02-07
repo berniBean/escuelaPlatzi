@@ -14,30 +14,12 @@ namespace CoreEscuela
             engine.inicializar();
             Printer.WriteTitle("Bienvenidos a la escuela");
             ImpimirCursosEscuela(engine.Escuela);
+            var listaObjetos = engine.GetObjetosEscuelas();
 
-            Printer.DrawLine(20);
-            Printer.DrawLine(20);
-            Printer.DrawLine(20);
-            Printer.WriteTitle("Pruebas de polimorfismo");
 
-            var alumnoTest = new Alumno{Nombre = "Gato Gary"};
 
-            ObjetoEscuelaBase ob = alumnoTest;
-            
-            Printer.WriteTitle("Alumno");
-            WriteLine($"Alumno:{alumnoTest.Nombre}");
-            WriteLine($"Alumno:{alumnoTest.UniqueId}");
-            Printer.WriteTitle("ObjetoEscuela");
-            WriteLine($"Alumno:{ob.Nombre}");
-            WriteLine($"Alumno:{ob.UniqueId}");
 
-            var evaluacion = new Evaluacion(){Nombre="Evaluacion de math", Nota=4.5f};
 
-            ob = evaluacion;
-            Printer.WriteTitle("Evaluacion");
-            WriteLine($"Alumno: {ob.Nombre}");
-            WriteLine($"Alumno: {ob.UniqueId}");
-            WriteLine($"Alumno: {ob.GetType()}");
 
         }
 
